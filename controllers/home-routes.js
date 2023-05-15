@@ -45,7 +45,7 @@ router.get('/',(req, res)=> {
     })
     .catch(err => {
         console.log(err);
-        reset.status(500).json(err);
+        res.status(500).json(err);
     });
 });
 
